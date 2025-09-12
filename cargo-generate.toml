@@ -8,5 +8,4 @@ nightly = { prompt = "Use nightly features?", choices = [
 ignore = ["rust-toolchain.toml"]
 
 [template]
-exclude = ["public/*"]
-ignore = ["node_modules"]
+exclude = ["public/*", "node_modules/*"]

@@ -1,7 +1,5 @@
-mod app;
-mod pages;
-
-pub use pages::*;
+pub mod app;
+pub mod pages;
 
 #[cfg(feature = "ssr")]
 #[tokio::main]
