@@ -4,7 +4,7 @@
     "tailwindcss": "^4.1.13"
   },
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./target/site/pkg/style.css",
-    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./target/site/pkg/style.css --watch"
+    "build": "npx @tailwindcss/cli -i ./style/input.css -o ./target/site/pkg/style.css",
+    "watch": "npx @tailwindcss/cli -i ./style/input.css -o ./target/site/pkg/style.css --watch"
   }
 }
