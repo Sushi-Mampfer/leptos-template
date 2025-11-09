@@ -22,7 +22,7 @@ async fn main() {
         .fallback(leptos_axum::file_and_error_handler(shell))
         .with_state(leptos_options);
 
-    let listener = tokio::net::TcpListener::bind(format!("127.0.0.1:{}", env::var("PORT").unwrap_or_else(|_| "8080".to_string()))).await.unwrap();
+    let listener = tokio::net::TcpListener::bind(format!("0.0.0.0:{}", env::var("PORT").unwrap_or_else(|_| "8080".to_string()))).await.unwrap();
     axum::serve(listener, app.into_make_service())
         .await
         .unwrap();
